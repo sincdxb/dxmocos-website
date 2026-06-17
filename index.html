@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DXMOCOS | Coffee, Kitchen & Home Appliances</title>
+  <meta name="description" content="DXMOCOS offers coffee, kitchen and home appliances through selected brands and Amazon UAE." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home"><img data-logo="dxmocos-logo" alt="DXMOCOS" /></a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#partners">Partner Brands</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">DXMOCOS</p>
+        <h1>Coffee, Kitchen & Home Appliances</h1>
+        <p>Designed for everyday living.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#products">Explore Products</a>
+          <a class="btn secondary" href="#contact">Contact Support</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img data-product-img="B0DW7BXKRH" data-img-type="01-main" alt="Featured coffee product" />
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">
+        <p class="eyebrow">Categories</p>
+        <h2>Shop by category</h2>
+      </div>
+      <div class="category-grid">
+        <a class="category-card" href="#products" data-filter-link="Coffee">
+          <img data-product-img="B0DW7BXKRH" data-img-type="01-main" alt="Coffee appliances" />
+          <span>Coffee</span>
+        </a>
+        <a class="category-card" href="#products" data-filter-link="Kitchen">
+          <img data-product-img="B0DTF8WWY3" data-img-type="01-main" alt="Kitchen appliances" />
+          <span>Kitchen</span>
+        </a>
+        <a class="category-card" href="#products" data-filter-link="Home">
+          <img data-product-img="B0G9Z319YP" data-img-type="01-main" alt="Home products" />
+          <span>Home</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-title">
+        <p class="eyebrow">Products</p>
+        <h2>Featured products</h2>
+      </div>
+      <div class="filters">
+        <button class="filter active" data-filter="All">All</button>
+        <button class="filter" data-filter="Coffee">Coffee</button>
+        <button class="filter" data-filter="Kitchen">Kitchen</button>
+        <button class="filter" data-filter="Home">Home</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="section partner-section" id="partners">
+      <div class="section-title">
+        <p class="eyebrow">Partner Brands</p>
+        <h2>Selected brands we work with</h2>
+      </div>
+      <div class="partner-grid">
+        <div class="partner-card">
+          <img data-logo="shardor-logo" alt="SHARDOR" />
+          <h3>SHARDOR</h3>
+          <p>Specializing in coffee grinders and brewing equipment.</p>
+        </div>
+        <div class="partner-card">
+          <img data-logo="amzchef-logo" alt="AMZCHEF" />
+          <h3>AMZCHEF</h3>
+          <p>Providing innovative kitchen appliances for modern homes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section support-section">
+      <div>
+        <p class="eyebrow">Support</p>
+        <h2>Need help with a product?</h2>
+        <p>For product support, warranty questions or general inquiries, contact us by email.</p>
+      </div>
+      <a class="btn primary" href="mailto:support@dxmocos.com">Contact Support</a>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div>
+      <h2>DXMOCOS</h2>
+      <p>Coffee, Kitchen & Home Appliances</p>
+    </div>
+    <div>
+      <p><a href="mailto:support@dxmocos.com">support@dxmocos.com</a></p>
+      <p>SINCO ELECTRONICS TRADING – FZCO</p>
+      <p>Dubai, UAE</p>
+      <p>© 2026 DXMOCOS. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
