@@ -1,35 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>DXMOCOS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>DXMOCOS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{font-family:Arial;padding:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{border:1px solid #ddd;padding:10px;border-radius:10px;text-align:center}
+.card img{width:100%;border-radius:10px}
+button{margin:5px}
+</style>
 </head>
 
 <body>
 
-  <section style="max-width:600px;margin:auto;text-align:center;">
+<h2>DXMOCOS Products</h2>
 
-    <h2>DXMOCOS Product</h2>
+<div class="grid">
 
-    <img id="productImage"
-         src="Coffee/B0DW7BXKRH/01-main.jpg"
-         style="width:100%;border-radius:12px;">
+  <div class="card" data-id="coffee1">
+    <img id="img-coffee1" src="Coffee/B09LHVL6W1/01.jpg">
+    <p>Coffee Machine</p>
+    <button onclick="prev('coffee1')">⬅</button>
+    <button onclick="next('coffee1')">➡</button>
+  </div>
 
-    <div style="margin-top:10px;display:flex;justify-content:center;gap:10px;">
-      <button onclick="prevImg()">⬅ Prev</button>
-      <button onclick="nextImg()">Next ➡</button>
-    </div>
+  <div class="card" data-id="kitchen1">
+    <img id="img-kitchen1" src="Kitchen/B08CKTB6Z4/01.jpg">
+    <p>Kitchen Tool</p>
+    <button onclick="prev('kitchen1')">⬅</button>
+    <button onclick="next('kitchen1')">➡</button>
+  </div>
 
-    <div style="margin-top:15px;">
-      <a href="https://www.amazon.ae/dp/B0DW7BXKRH" target="_blank">
-        View on Amazon
-      </a>
-    </div>
+  <div class="card" data-id="home1">
+    <img id="img-home1" src="Home/B0G9Z319YP/01.jpg">
+    <p>Home Product</p>
+    <button onclick="prev('home1')">⬅</button>
+    <button onclick="next('home1')">➡</button>
+  </div>
 
-  </section>
+</div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
